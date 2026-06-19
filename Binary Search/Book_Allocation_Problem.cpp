@@ -6,7 +6,7 @@ bool valid(int p[], int n, int m, int mid){
         if(pg+p[i]<=mid) pg+=p[i];
         else{
             stu++;
-            pg=0;
+            pg=p[i];
         }
     }
     return stu>m?false:true;
